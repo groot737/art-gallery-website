@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+.map-section{
+    background-color: red;
+    width: 100%;
+    height: 503px;
+    background-image: url(../assets/desktop/image-map@2x.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1207px, 574px;
+}
+/* ----- location box ----*/
+.location-box{
+    display: flex;
+}
+.location-left-item{
+    width: 56px;
+    height: 72px;
+    background-color: #D5966C;
+    background-image: url(../assets/icon-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location-right-item{
+    width: 208px;
+    height: 72px;
+    background-color: #151515;
+    color: white;
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 24px;
+}
+.location-box:hover > .location-left-item{
+    background-color: #151515;
+}
+.location-box:hover > .location-right-item{
+    background-color: #D5966C;
+}
+/* ======== LOCATION INFO SECTION ======*/
+
+.location-info-section{
+    width: 100%;
+    height: 493px;
+    background-color: #151515;
+}
+.location-info-container{
+    width: 100%;
+    height: 493px;
+    justify-content: center;
+    display: flex;   
+    align-items: center;
+}
+.info-box{
+    width: 343px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 48px;
+}
+.location-title > h1 {
+    color: white;
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 50px;
+}
+.location-info{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+}
+.location-info > h2{
+    color: #D5966C;
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 32px;
+}
+.location-info > p{
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+.location-info > p:nth-child(3){
+    color: white;
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+/* ===== FOOTER ====== */
+footer{
+    width: 100%;
+    height: 336px;
+    background-color: #D5966C;
+}
+.footer-container{
+    width: 100%;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-info-box{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 38px;
+}
+.website-info-box > p {
+    width: 311px;
+    color: #151515;
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+.icon-box{
+    display: flex;
+    gap: 20px;
+}
+svg:hover path{
+    fill: white;
+}
+@media screen and (min-width: 481px) and (max-width:768px){
+    .map-section{
+        height: 600px;
+        background-image: url(../assets/tablet/image-hero@2x.jpg);
+       background-size: 861px, 697px;
+    }
+    .location-info-section{
+        height: 436px;
+    }
+    .location-info-container{
+        height: 436px;
+    }
+    .location-box{
+        margin-left: 5%;
+    }
+    .info-box{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .location-info {
+        width: 50%;
+    }
+    /*----- footer ------*/
+    footer{
+        height: 216px;
+    }
+    .footer-container{
+        height: 216px;
+    }
+    .website-info-box{
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+    .website-info-box > img{
+        width: 110px;
+        height: 40px;
+    }
+}
+@media screen and (min-width:769px){
+    .map-section{
+        height: 600px;
+        background-image: url(../assets/desktop/image-map@2x.png);
+        background-size: 1440px, 685px;
+    }
+    .location-box{
+        margin-left: 5%;
+    }
+    .info-box{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .location-title {
+        width: 250px;
+    }
+    .location-title > h1{
+        font-size: 70px;
+    }
+    .location-info > h2 {
+        font-size: 36px;
+    }
+    .website-info-box > p{
+        font-size: 22px;
+    }
+    .website-info-box{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .website-info-box > img{
+        width: 159px;
+        height: 58px;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .map-section{
+        height: 600px;
+        background-image: url(../assets/desktop/image-map@2x.png);
+        background-size: 100%, 685px;
+    }
+}
