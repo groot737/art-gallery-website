@@ -346,7 +346,6 @@ svg:hover path {
     }
 
     .gallery-top-img {
-        background-color: yellow;
         order: 1;
         width: 100vw;
         height: 320px;
@@ -489,7 +488,6 @@ svg:hover path {
 
     .footer-items {
         width: 92%;
-        background-color: yellow;
     }
 
     .footer-logo {
